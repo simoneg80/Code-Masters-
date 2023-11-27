@@ -8,7 +8,7 @@ urlpatterns = [
     path('about/', views.about, name='about'),
 
     # shop page below
-    path('shops/', views.shops_index, name='index'),
+    path('guides/', views.guides_index, name='index'),
 
 
 
