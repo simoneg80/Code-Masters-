@@ -9,7 +9,8 @@ def home(request):
 
 
 # Path for About Page
-
+def about(request):
+    return render(request, 'about.html')
 
 
 
