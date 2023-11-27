@@ -6,6 +6,7 @@ urlpatterns = [
     # about page below
     path('about/', views.about, name="about"),
     # shop paget below
+    path('shops/', views.shops_index, name='index'),
 
 
 ]
