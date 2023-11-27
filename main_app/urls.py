@@ -5,7 +5,7 @@ urlpatterns = [
     path('', views.home, name="home"),
     # about page below
     path('about/', views.about, name="about"),
-    # shop paget below
+    # shop page below
 
 
 ]
