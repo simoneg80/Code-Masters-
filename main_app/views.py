@@ -23,5 +23,5 @@ def about(request):
 
 
 # Path for Shop Page
-def shops_index(request):
-    return render(request, 'forms/index.html')
+def guides_index(request):
+    return render(request, 'guides/index.html')
