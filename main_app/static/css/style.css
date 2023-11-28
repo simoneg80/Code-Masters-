@@ -1,0 +1,8 @@
+/* .guidename plus width and height of the image */
+
+.JavaScript {
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/JS.png");
+  background-size: cover;
+}

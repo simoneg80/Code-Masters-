@@ -4,7 +4,7 @@
 {% for guide in guides %}
 <div class="card">
   <div class="card-content">
-    <span class="card-img"><img src="{% static 'images/js.png' %}" /></span>
+    <div class="{{ guide.name }}"></div>
   </div>
   <span class="card-title">{{ guide.name }}</span>
 </div>
