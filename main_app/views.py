@@ -3,6 +3,8 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Guide, Order
 # from .forms import OrderForm
 from django.views.generic import ListView, DetailView
+from django.contrib.auth import login
+from django.contrib.auth import UserCreationForm
 
 
 # Create your views here.
