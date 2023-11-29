@@ -11,6 +11,6 @@ urlpatterns = [
     path('guides/', views.guides_index, name='index'),
 
     #Detail page
-    path('guides/<int:cat_id>' views.guides_detail, name='detail'),
+    path('guides/<int:cat_id>', views.guides_detail, name='detail'),
 
 ]
