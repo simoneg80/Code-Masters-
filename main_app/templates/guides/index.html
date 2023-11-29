@@ -1,14 +1,16 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1>Shop All Guides</h1>
-{% for guide in guides %}
-<a href="/guides/{{guide.id}}">
-  <div class="card">
-    <div class="card-content">
-      <div class="{{ guide.name }}"></div>
+<body class="indexbody">
+  <h1>Shop All Guides</h1>
+  {% for guide in guides %}
+  <a href="/guides/{{guide.id}}">
+    <div class="card">
+      <div class="card-content">
+        <div class="{{ guide.name }}"></div>
+      </div>
+      <span class="card-title">{{ guide.name }}</span>
     </div>
-    <span class="card-title">{{ guide.name }}</span>
-  </div>
-</a>
+  </a>
+</body>
 
 {% endfor %} {% endblock %}

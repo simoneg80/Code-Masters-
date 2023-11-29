@@ -40,8 +40,6 @@
   text-align: center;
   margin-top: 20%;
   font-style: italic;
-
-
 }
 
 #homebutton {
@@ -54,6 +52,11 @@
   font-size: 25px;
   font-style: italic;
   color: #023047;
+}
+
+#homebutton > a {
+  text-decoration: none;
+  color: #f5f2e2;
 }
 
 #abouttitle {
@@ -70,7 +73,7 @@
 }
 
 .aboutparagraphs {
- font-size: 20px;
+  font-size: 20px;
   font-style: italic;
   text-align: center;
   margin: 5%;
@@ -85,7 +88,17 @@
   border-color: #ffb703;
   border-radius: 4%;
   font-size: 20px;
+}
+
+#aboutbutton > a {
+  text-decoration: none;
   color: #f5f2e2;
- 
-  
+}
+
+.nav-wrapper {
+  background-color: #023047;
+}
+
+.indexbody {
+  background-color: #f5f2e2;
 }
