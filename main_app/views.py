@@ -13,3 +13,10 @@ def about(request):
 def guides_index(request):
     guides = Guide.objects.all()
     return render(request, 'guides/index.html', {'guides': guides})
+
+# detail page
+def guides_detail(request, guide_id):
+    guide = Guide.objects.get(id = guide_id)
+    return render(request, 'guides/detail.htnl', {
+        'guide': guide
+    })
