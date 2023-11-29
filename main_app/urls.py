@@ -13,4 +13,8 @@ urlpatterns = [
     #Detail page
     path('guides/<int:guide_id>', views.guides_detail, name='detail'),
 
+    #Orders paths below
+    path('orders/', views.OrderList.as_view(), name='orders_index'),
+    
+
 ]
