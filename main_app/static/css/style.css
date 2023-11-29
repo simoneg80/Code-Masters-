@@ -53,5 +53,39 @@
   border-radius: 4%;
   font-size: 25px;
   font-style: italic;
-  /* color: #023047; */
+  color: #023047;
+}
+
+#abouttitle {
+  font-size: 80px;
+  color: #023047;
+  font-style: italic;
+  text-align: center;
+  margin-top: 15%;
+  text-decoration: underline #ffb703;
+}
+
+.aboutcontent {
+  background-color: #f5f2e2;
+}
+
+.aboutparagraphs {
+ font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  margin: 5%;
+  margin-top: 7%;
+}
+
+#aboutbutton {
+  margin-top: 7%;
+  background-color: #023047;
+  height: 60px;
+  border: 4px solid;
+  border-color: #ffb703;
+  border-radius: 4%;
+  font-size: 20px;
+  color: #f5f2e2;
+ 
+  
 }
