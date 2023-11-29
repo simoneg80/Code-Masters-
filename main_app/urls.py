@@ -13,4 +13,12 @@ urlpatterns = [
     #Detail page
     path('guides/<int:guide_id>', views.guides_detail, name='detail'),
 
+    # Step 3: Orders paths below
+    path('orders/', views.OrderList.as_view(), name='orders_index'),
+    path('orders/<int:pk>/', views.OrderDetail.as_view(), name='orders_detail'),
+    path('orders/create/', views.OrderCreate.as_view(), name='orders_create'),
+    path('orders/<int:pk>/update/', views.OrderUpdate.as_view(), name='orders_update'),
+    path('orders/<int:pk>/delete/', views.OrderDelete.as_view(), name='orders_delete'),
+    
+
 ]

@@ -1,13 +1,32 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+
+{% block content %}
 
 <h1>Guide Details</h1>
-
-<div class="card">
-  <div class="card-content">
-    <div class="{{ guide.name }}"></div>
-    <span class="card-title">{{ guide.name }}</span>
+<div class="row">
+  <div class="col s6">
+    <div class="card">
+      <div class="card-content">
+        <div class="{{ guide.name }}"></div>
+         <span class="card-title">{{ guide.name }}</span>
     <p>{{guide.description|linebreaks}}</p>
     <p>Price: {{guide.price}}</p>
+    </div>
+  </div>
+  <div class="col s6">
+    <table class="striped">
+      <thead>
+        <tr><th>Date</th><th>Order</th></tr>
+      </thead>
+      <tbody>
+        {% for order in guide.order_set.all %}
+          <tr>
+            <td>{{order.date}}</td>
+            <td>{{feeding.get_meal_display}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 </div>
 
