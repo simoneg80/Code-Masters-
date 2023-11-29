@@ -102,3 +102,12 @@
 .indexbody {
   background-color: #f5f2e2;
 }
+
+#indextitle {
+  font-size: 80px;
+  color: #023047;
+  font-style: italic;
+  margin-left: 5%;
+  margin-top: 5%;
+  
+}
