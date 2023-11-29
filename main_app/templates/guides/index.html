@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
 <body class="indexbody">
-  <h1>Shop All Guides</h1>
+  <h1 id="indextitle">Shop All Guides</h1>
   {% for guide in guides %}
   <a href="/guides/{{guide.id}}">
     <div class="card">
