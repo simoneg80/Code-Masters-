@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>CodeMasters</h1>
-<h6>CodeMasters — the trailblazing guide to software engineering.</h6>
-
-<button>Shop Study Guides Now!</button>
+<body class="homecontent">
+    <div class="hometitleslogan">
+        <h1 id='hometitle'>CodeMasters</h1>
+        <h6 id="homeslogan">CodeMasters — the trailblazing guide to software engineering.</h6>
+        <button id="homebutton"><a href="{% url 'index' %}">Shop Study Guides Now!</button>
+    </div>
+</body>
 
 {% endblock %}

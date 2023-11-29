@@ -25,3 +25,33 @@
   width: 200px;
   height: 200px;
 }
+
+.homecontent {
+  background-color: #f5f2e2;
+}
+
+#hometitle {
+  font-size: 80px;
+  color: #023047;
+  font-style: italic;
+}
+
+.hometitleslogan {
+  text-align: center;
+  margin-top: 20%;
+  font-style: italic;
+
+
+}
+
+#homebutton {
+  margin-top: 7%;
+  background-color: #ffb703;
+  height: 60px;
+  border: 2px solid;
+  border-color: #023047;
+  border-radius: 4%;
+  font-size: 25px;
+  font-style: italic;
+  /* color: #023047; */
+}
