@@ -17,6 +17,6 @@ def guides_index(request):
 # detail page
 def guides_detail(request, guide_id):
     guide = Guide.objects.get(id = guide_id)
-    return render(request, 'guides/detail.htnl', {
+    return render(request, 'guides/detail.html', {
         'guide': guide
     })
