@@ -6,3 +6,22 @@
   background-image: url("../images/JS.png");
   background-size: cover;
 }
+
+.Python {
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/Python.png");
+  background-size: cover;
+}
+
+.HtmlCss {
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/Html-Css.png");
+  background-size: cover;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+}
