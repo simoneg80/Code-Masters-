@@ -1,24 +1,31 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+{% load static %} 
 
-<h1>About CodeMasters</h1>
-<p>
-  CodeMasters is a trailblazing guide to software engineering. We provide
-  study guides for the most popular coding languages and frameworks. Our
-  guides are designed to help you learn the basics of each language and
-  framework, and to help you build a solid foundation for your future
-  career in software engineering. Our guides are written by experienced 
-  and successful software engineers who have studied at some of the most
-  prestigious tech institutions in the United States. We are confident that 
-  our guides will guide you toward your goals and help you get immersed in the 
-  ever-evolving world of tech. 
-</p>
-<p>
-  CodeMasters was founded in November 2023 by a group of software engineers who 
-  wanted to share their knowledge and experience with the world. We are 
-  passionate about software engineering and we want to help you become 
-  passionate about it too. We believe that software engineering is the 
-  future and we want to help you become a part of it.
-</p>
- <button>Your Learning Begins Here!</button>
+{% block content %}
+
+<body class="aboutcontent">
+  <h1 id="abouttitle">About CodeMasters</h1>
+  <div class="aboutparagraphs">
+    <p id="aboutp1">
+      CodeMasters is a trailblazing guide to software engineering. We provide
+      study guides for the most popular coding languages and frameworks. Our
+      guides are designed to help you learn the basics of each language and
+      framework, and to help you build a solid foundation for your future
+      career in software engineering. Our guides are written by experienced 
+      and successful software engineers who have studied at some of the most
+      prestigious tech institutions in the United States. We are confident that 
+      our guides will guide you toward your goals and help you get immersed in the 
+      ever-evolving world of tech. 
+    </p>
+   <p id="aboutp2">
+      CodeMasters was founded in November 2023 by a group of software engineers who 
+      wanted to share their knowledge and experience with the world. We are 
+      passionate about software engineering and we want to help you become 
+      passionate about it too. We believe that software engineering is the 
+      future and we want to help you become a part of it.
+    </p>
+    <button id="aboutbutton"><a href="{% url 'index' %}">Your Learning Begins Here!</button>
+  </div>
+</body>
 
 {% endblock %}
