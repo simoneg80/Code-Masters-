@@ -5,10 +5,10 @@
 <div class="card">
   <div class="card-content">
     <div class="{{ guide.name }}"></div>
+    <span class="card-title">{{ guide.name }}</span>
+    <p>{{guide.description|linebreaks}}</p>
+    <p>Price: {{guide.price}}</p>
   </div>
-  <span class="card-title">{{ guide.name }}</span>
-  <p>Description: {{guide.description|linebreaks}}</p>
-  <p>Price: {{guide.price}}</p>
 </div>
 
 {% endblock %}
