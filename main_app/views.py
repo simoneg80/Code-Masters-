@@ -1,5 +1,9 @@
-from django.shortcuts import render
-from .models import Guide
+from django.shortcuts import render, redirect
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from .models import Guide, Order
+from .forms import OrderForm
+from django.views.generic import ListView, DetailView
+
 
 # Create your views here.
 def home(request):
