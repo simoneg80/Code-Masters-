@@ -4,19 +4,6 @@ from datetime import date
 from django.contrib.auth.models import User
 
 
-#comment model
-class Comment(models.Model):
-  user = models.ForeignKey(User, on_delete=models.CASCADE)
-  date= models.DateField()
-  review = models.CharField(max_length=5000)
-
-  guide = models.ForeignKey(Guide, on_delete=models.CASCADE)
-
-  def __str__(self):
-    return f"{self.user} - {self.date} - {self.review}"
-
-
-
 
 # Step1: Create a model M:M Model for order
 class Order(models.Model):
@@ -41,3 +28,15 @@ class Guide(models.Model):
 
   def __str__(self):
     return f'{self.name} ({self.id})'
+
+
+#comment model
+class Comment(models.Model):
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
+  date= models.DateField()
+  review = models.CharField(max_length=5000)
+
+  guide = models.ForeignKey(Guide, on_delete=models.CASCADE)
+
+  def __str__(self):
+    return f"{self.user} - {self.date} - {self.review}"
