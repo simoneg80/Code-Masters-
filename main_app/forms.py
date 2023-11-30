@@ -11,5 +11,5 @@ class OrderForm(ModelForm):
 class CommentForm(ModelForm):
     class Meta:
         model = Comment
-        fields = ['date', 'review']
+        fields = ['review']
         
