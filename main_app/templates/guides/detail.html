@@ -1,23 +1,24 @@
 {% extends 'base.html' %} {% block content %}
-
-<h1>Guide Details</h1>
-<div class="row">
-  <div class="col s6">
-    <div class="card">
-      <div class="card-content">
-        <div class="{{ guide.name }}"></div>
-        <span class="card-title">{{ guide.name }}</span>
-        <p>{{guide.description|linebreaks}}</p>
-        <p>Price: {{guide.price}}</p>
+<body class="detailsbody">
+  <h1 id="detailstitle">Order Details</h1>
+  <div class="row">
+    <div class="col s6">
+      <div class="card">
+        <div class="card-content">
+          <div class="{{ guide.name }}"></div>
+          <span class="detailcardtitle">{{ guide.name }}</span>
+        </div>
+        <p class="detaildescription">{{guide.description|linebreaks}}</p>
+        <p class="detaildescription">Price: ${{guide.price}}.00</p>
       </div>
     </div>
-  </div>
-  <div class="col s6">
-    <form method="POST" action="{% url 'create_order' guide.id %}">
-      {% csrf_token %} {{ order_form.as_p }}
-      <button type="submit">Save Order</button>
-    </form>
-  </div>
+    <div class="col s6">
+      <form class="orderform" method="POST" action="{% url 'create_order' guide.id %}">
+        {% csrf_token %} {{ order_form.as_p }}
+        <button id="detailbutton" type="submit">Save Order!</button>
+      </form>
+    </div>
+</body>
 
   {% endblock %}
 </div>

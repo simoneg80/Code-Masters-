@@ -3,7 +3,7 @@
 <form method="POST" action="{% url 'create_order' %}">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Save Order</button>
 </form>
+<button id="" type="submit">Save Order</button>
     
     {% endblock %}
