@@ -4,6 +4,20 @@ from datetime import date
 from django.contrib.auth.models import User
 
 
+#comment model
+class Comment(models.Model):
+  username =models.User.username
+  date= models.DateField()
+  review = models.CharField()
+
+  guide = models.ForeignKey(Guide, on_delete=models.CASCADE)
+
+  def __str__(self):
+    return f"{self.username} - {self.date} - {self.review}"
+
+
+
+
 # Step1: Create a model M:M Model for order
 class Order(models.Model):
   date = models.DateField()
