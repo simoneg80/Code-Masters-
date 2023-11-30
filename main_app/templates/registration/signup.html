@@ -1,13 +1,12 @@
 {% extends 'base.html' %} {% block content %}
 
 <body class="bodysignup">
+  <h1 id="signuptitle">Don't have an account with us yet? Let's get you signed up!</h1>
   <div class="signupbox">
-    <h1 id="signuptitle">Don't have an account with us yet? Let's get you signed up!</h1>
     <p class="red-text">{{ error_message }}</p>
-    
     <form method="POST" action="{% url 'signup' %}">
       {% csrf_token %} {{ form.as_p }}
-      <input type="submit" class="btn" value="Sign Up" />
+      <input type="submit" id="signupbtn" value="Sign Up" />
     </form>
   </div>
 </body>
