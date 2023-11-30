@@ -6,14 +6,14 @@ from django.contrib.auth.models import User
 
 #comment model
 class Comment(models.Model):
-  username =models.User.username
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
   date= models.DateField()
-  review = models.CharField()
+  review = models.CharField(max_length=5000)
 
   guide = models.ForeignKey(Guide, on_delete=models.CASCADE)
 
   def __str__(self):
-    return f"{self.username} - {self.date} - {self.review}"
+    return f"{self.user} - {self.date} - {self.review}"
 
 
 
