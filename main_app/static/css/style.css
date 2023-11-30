@@ -163,3 +163,32 @@
   font-size: 15px;
   color: #023047;
 }
+
+.bodysignup {
+background-color:#f5f2e2;
+}
+
+.signupbox {
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  background-color: #023047;
+  border: 4px solid;
+  border-color: #ffb703;
+  border-radius: 4%;
+  margin-top: auto;
+  margin: auto;
+  margin-bottom: 10%;
+  display: grid;
+ justify-content:center;
+ color: #f5f2e2;
+}
+
+#signuptitle {
+  font-size: 20px;
+  color:#f5f2e2;
+  text-align: center;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  
+}
