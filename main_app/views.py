@@ -1,10 +1,12 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect 
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Guide, Order
-from .forms import OrderForm
+from .forms import OrderForm, CommentForm
 from django.views.generic import ListView, DetailView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.urls import reverse
+
 
 
 # Create your views here.
@@ -24,9 +26,11 @@ def guides_index(request):
 def guides_detail(request, guide_id):
     guide = Guide.objects.get(id = guide_id)
     order_form = OrderForm()
+    comment_form = CommentForm()
     return render(request, 'guides/detail.html', {
         'guide': guide,
-        'order_form': order_form})
+        'order_form': order_form,
+        'comment_form': comment_form})
 
 # Step 4: Create full CRUD for Order
 class OrderList(ListView):
@@ -56,7 +60,8 @@ def create_order(request, guide_id):
         order.guide_id = guide_id
         order.save()
     # Redirect to a success page or do something else
-    return redirect('detail', guide_id=guide_id)
+        return redirect(reverse('orders_index'))
+    return render(request, 'gudies/detail.html', {'guide_id': guide_id})
 
 
 def signup(request):
@@ -72,5 +77,14 @@ def signup(request):
     form = UserCreationForm()
     context = {'form': form, 'error_message': error_message}
     return render(request, 'registration/signup.html', context)
+
+
+def add_comment(request, guide_id):
+    form = CommentForm(request.POST)
+    if form.is_valid():
+        new_comment = form.save(commit=False)
+        new_comment.guide_id = guide_id
+        new_comment.save()
+    return redirect('detail', guide_id=guide_id)
 
    
