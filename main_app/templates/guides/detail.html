@@ -21,5 +21,23 @@
     </form>
   </div>
 
-  {% endblock %}
+  <div class="col s6">
+    <table class="striped">
+      <thead>
+        <tr><th>UserName</th><th>Date</th><th>Comment</th></tr>
+      </thead>
+      <tbody>
+        {% for comment in guide.comment_set.all %}
+          <tr>
+            <td>{{comment.user}}</td>
+            <td>{{comment.date}}</td>
+            <td>{{comment.review}}</td>
+            
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
 </div>
+{% endblock %}
