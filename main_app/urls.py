@@ -21,6 +21,9 @@ urlpatterns = [
     path('orders/create/', views.OrderCreate.as_view(), name='orders_create'),
     path('orders/<int:pk>/update/', views.OrderUpdate.as_view(), name='orders_update'),
     path('orders/<int:pk>/delete/', views.OrderDelete.as_view(), name='orders_delete'),
+
+    #signup path
+    path('accounts/signup/', views.signup, name='signup'),
     
 
 ]

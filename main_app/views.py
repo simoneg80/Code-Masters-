@@ -3,6 +3,8 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Guide, Order
 from .forms import OrderForm
 from django.views.generic import ListView, DetailView
+from django.contrib.auth import login
+from django.contrib.auth.forms import UserCreationForm
 
 
 # Create your views here.
@@ -48,20 +50,27 @@ class OrderDelete(DeleteView):
 
 
 def create_order(request, guide_id):
-    # if request.method == 'POST':
     form = OrderForm(request.POST)
     if form.is_valid():
-            # # Get the user object for the current logged-in user
-            # user = request.user
-
-            # Save the form with the user information
         order = form.save(commit=False)
         order.guide_id = guide_id
         order.save()
-
-            # Redirect to a success page or do something else
+    # Redirect to a success page or do something else
     return redirect('detail', guide_id=guide_id)
-    # else:
-    #     form = OrderForm()
 
-        # return render(request, 'order_form.html', {'form': form})
+
+def signup(request):
+    error_message = ''
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect('index')
+        else:
+            error_message = 'Invalid sign up - try again'
+    form = UserCreationForm()
+    context = {'form': form, 'error_message': error_message}
+    return render(request, 'registration/signup.html', context)
+
+   
