@@ -12,7 +12,6 @@
   height: 100px;
   background-image: url("../images/Python.png");
   background-size: cover;
-  
 }
 
 .HtmlCss {
@@ -124,5 +123,43 @@
   font-style: italic;
   margin-left: 5%;
   margin-top: 5%;
-  
+}
+
+#logintitle {
+  font-size: 25px;
+  color: #ffb703;
+  text-align: center;
+  margin-left: 5%;
+  margin-bottom: 15%;
+}
+
+.loginbody {
+  background-color: #f5f2e2;
+}
+
+.loginbox {
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  background-color: #023047;
+  border: 4px solid;
+  border-color: #ffb703;
+  border-radius: 4%;
+  margin-top: auto;
+  margin: auto;
+  margin-bottom: 10%;
+  display: grid;
+ justify-content:center;
+}
+
+#loginbtn {
+  margin-top: 6%;
+  background-color: #ffb703;
+  height: 40px;
+  width: 90px;
+  border: 2px solid;
+  border-color: #023047;
+  border-radius: 4%;
+  font-size: 15px;
+  color: #023047;
 }
