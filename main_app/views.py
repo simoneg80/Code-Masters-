@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Guide, Order
-# from .forms import OrderForm
+from .forms import OrderForm
 from django.views.generic import ListView, DetailView
 
 
@@ -21,9 +21,10 @@ def guides_index(request):
 # detail page
 def guides_detail(request, guide_id):
     guide = Guide.objects.get(id = guide_id)
+    order_form = OrderForm()
     return render(request, 'guides/detail.html', {
-        'guide': guide
-    })
+        'guide': guide,
+        'order_form': order_form})
 
 # Step 4: Create full CRUD for Order
 class OrderList(ListView):
@@ -44,3 +45,23 @@ class OrderUpdate(UpdateView):
 class OrderDelete(DeleteView):
     model = Order
     success_url = '/orders/'
+
+
+def create_order(request, guide_id):
+    # if request.method == 'POST':
+    form = OrderForm(request.POST)
+    if form.is_valid():
+            # # Get the user object for the current logged-in user
+            # user = request.user
+
+            # Save the form with the user information
+        order = form.save(commit=False)
+        order.guide_id = guide_id
+        order.save()
+
+            # Redirect to a success page or do something else
+    return redirect('detail', guide_id=guide_id)
+    # else:
+    #     form = OrderForm()
+
+        # return render(request, 'order_form.html', {'form': form})

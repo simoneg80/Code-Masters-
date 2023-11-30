@@ -12,6 +12,8 @@ urlpatterns = [
 
     #Detail page
     path('guides/<int:guide_id>', views.guides_detail, name='detail'),
+    
+    path('guides/<int:guide_id>/create_order/', views.create_order, name='create_order'),
 
     # Step 3: Orders paths below
     path('orders/', views.OrderList.as_view(), name='orders_index'),

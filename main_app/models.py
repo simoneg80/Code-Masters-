@@ -2,6 +2,7 @@ from django.db import models
 from django.urls import reverse
 
 
+
 # Step1: Create a model M:M Model for order
 class Order(models.Model):
   date = models.DateField()
