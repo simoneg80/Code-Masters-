@@ -1,11 +1,13 @@
 from django.shortcuts import render, redirect 
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from .models import Guide, Order
+from .models import Guide, Order, Comment
 from .forms import OrderForm, CommentForm
 from django.views.generic import ListView, DetailView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse
+from django.http import HttpResponse
+
 
 
 
@@ -85,6 +87,11 @@ def add_comment(request, guide_id):
         new_comment = form.save(commit=False)
         new_comment.guide_id = guide_id
         new_comment.save()
+    return redirect('detail', guide_id=guide_id)
+
+def delete_comment(request, guide_id, pk):
+    comment = Comment.objects.get(pk=pk)
+    comment.delete()
     return redirect('detail', guide_id=guide_id)
 
    

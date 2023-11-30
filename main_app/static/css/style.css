@@ -187,11 +187,10 @@
   margin-top: auto;
   margin-block: 5%;
   display: grid;
- signupstyling
- color: gray;
- font-size: 10px;
- font-style: italic;
- padding-top: 5%; 
+  color: gray;
+  font-size: 10px;
+  font-style: italic;
+  padding-top: 5%; 
 }
 
 #signupbtn {
