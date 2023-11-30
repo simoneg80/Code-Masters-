@@ -22,6 +22,9 @@ urlpatterns = [
     path('orders/<int:pk>/update/', views.OrderUpdate.as_view(), name='orders_update'),
     path('orders/<int:pk>/delete/', views.OrderDelete.as_view(), name='orders_delete'),
 
+    #comment add path
+    path('guides/<int:guide_id>/add_comment', views.add_comment, name='add_comment'),
+
     #signup path
     path('accounts/signup/', views.signup, name='signup'),
     
