@@ -24,9 +24,11 @@ urlpatterns = [
 
     #comment add path
     path('guides/<int:guide_id>/add_comment', views.add_comment, name='add_comment'),
+    path('comments/<int:pk>/delete', views.delete_comment, name='delete_comment'),
 
     #signup path
     path('accounts/signup/', views.signup, name='signup'),
+
     
 
 ]
