@@ -13,7 +13,9 @@
     </div>
   </div>
   <div class="col s6">
-    <form method="POST" action="{% url 'create_order' guide.id %}">
+    <form method="POST" action="{% url 'orders_create' %}">
+      <!-- guide.id
+      'orders_index'  -->
       {% csrf_token %} {{ order_form.as_p }}
       <button type="submit">Save Order</button>
     </form>
@@ -21,4 +23,3 @@
 
   {% endblock %}
 </div>
-

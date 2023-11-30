@@ -1,8 +1,8 @@
 from django.forms import ModelForm
-from .models import Guide, User
+from .models import Guide, Order
 
 class OrderForm(ModelForm):
     class Meta:
-        model = User
-        fields = ['username', 'email', 'password']
+        model = Order
+        fields = "__all__"
         

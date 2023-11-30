@@ -1,12 +1,13 @@
 from django.db import models
 from django.urls import reverse
-
+from datetime import date
+from django.contrib.auth.models import User
 
 
 # Step1: Create a model M:M Model for order
 class Order(models.Model):
   date = models.DateField()
-  
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):
     return f'Order # {self.id} on {self.date}'
@@ -14,8 +15,6 @@ class Order(models.Model):
   def get_absolute_url(self):
     return reverse('detail', kwargs={'pk': self.id})
 
-
-from django.contrib.auth.models import User
 
 # Create your models here.
 class Guide(models.Model):
@@ -25,7 +24,6 @@ class Guide(models.Model):
 # Step2: Add a ManyToManyField to Order
   orders = models.ManyToManyField(Order, blank=True)
 
-  user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):
     return f'{self.name} ({self.id})'

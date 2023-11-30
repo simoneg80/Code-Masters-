@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 
-<form method="POST" action="{% url 'create_order' %}">
+<form method="POST" action="{% url 'orders_create' %}">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Save Order</button>
