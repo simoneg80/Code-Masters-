@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 
 # Step1: Create a model M:M Model for order
 class Order(models.Model):
-  date = models.DateField()
+  date = models.DateField(auto_now_add=True)
   user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):
@@ -32,11 +32,11 @@ class Guide(models.Model):
 
 #comment model
 class Comment(models.Model):
-  user = models.ForeignKey(User, on_delete=models.CASCADE)
+  user = models.ForeignKey(User, on_delete=models.CASCADE,blank=True, null=True)
   date= models.DateField(auto_now_add=True)
   review = models.CharField(max_length=5000)
 
-  guide = models.ForeignKey(Guide, on_delete=models.CASCADE)
+  guide = models.ForeignKey(Guide, on_delete=models.CASCADE,blank=True, null=True)
 
   def __str__(self):
     return f"{self.user.username} - {self.date} - {self.review}"
