@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect 
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Guide, Order
-from .forms import OrderForm
+from .forms import OrderForm, CommentForm
 from django.views.generic import ListView, DetailView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
@@ -26,9 +26,11 @@ def guides_index(request):
 def guides_detail(request, guide_id):
     guide = Guide.objects.get(id = guide_id)
     order_form = OrderForm()
+    comment_form = CommentForm()
     return render(request, 'guides/detail.html', {
         'guide': guide,
-        'order_form': order_form})
+        'order_form': order_form
+        'comment_form': comment_form})
 
 # Step 4: Create full CRUD for Order
 class OrderList(ListView):
