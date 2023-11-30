@@ -29,7 +29,7 @@ def guides_detail(request, guide_id):
     comment_form = CommentForm()
     return render(request, 'guides/detail.html', {
         'guide': guide,
-        'order_form': order_form
+        'order_form': order_form,
         'comment_form': comment_form})
 
 # Step 4: Create full CRUD for Order
