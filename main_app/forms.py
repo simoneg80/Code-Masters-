@@ -4,7 +4,7 @@ from .models import Guide, Order, Comment
 class OrderForm(ModelForm):
     class Meta:
         model = Order
-        fields = "__all__"
+        fields = ['user']
 
 
 
