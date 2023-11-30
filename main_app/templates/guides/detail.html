@@ -12,6 +12,7 @@
         <p class="detaildescription">Price: ${{guide.price}}.00</p>
       </div>
     </div>
+ signupstyling
     <div class="col s6">
       <form class="orderform" method="POST" action="{% url 'create_order' guide.id %}">
         {% csrf_token %} {{ order_form.as_p }}
@@ -20,6 +21,42 @@
     </div>
 </body>
 
-  {% endblock %}
-</div>
+  </div>
+  <div class="col s6">
+    <form method="POST" action="{% url 'orders_create' %}">
+      <!-- guide.id
+      'orders_index'  -->
+      {% csrf_token %} {{ order_form.as_p }}
+      <button type="submit">Save Order</button>
+    </form>
+  </div>
+ main
 
+  <div class="col s6">
+    <form action="{% url 'add_comment' guide.id %}" method="POST">
+      {% csrf_token %} {{ comment_form.as_p }}
+      <input type="submit" class="btn" value="Add Comment" />
+    </form>
+    <table class="striped">
+      <thead>
+        <tr>
+          <th>UserName</th>
+          <th>Date</th>
+          <th>Comment</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for comment in guide.comment_set.all %}
+        <tr>
+          <td>{{user.username}}</td>
+          <td>{{comment.date}}</td>
+          <td>{{comment.review}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

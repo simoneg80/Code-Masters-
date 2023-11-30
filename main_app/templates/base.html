@@ -28,6 +28,7 @@
             <li><a href="{% url 'index' %}">Shop All Guides</a></li>
             {% if user.is_authenticated %}
             <li><a href="{% url 'logout' %}">Log Out</a></li>
+            <li><a href="{% url 'orders_index' %}">View All My Orders</a></li>
             {% else %}
             <li><a href="{% url 'signup' %}">Sign Up</a></li>
             <li><a href="{% url 'login' %}">Log In</a></li>
@@ -36,6 +37,11 @@
         </div>
       </nav>
     </header>
-    {% block content %} {% endblock %}
+    <main>{% block content %} {% endblock %}</main>
+    <footer class="page-footer">
+      <div class="right">
+        All Rights Reserved, &copy; 2022 Code Masters &nbsp;
+      </div>
+    </footer>
   </body>
 </html>

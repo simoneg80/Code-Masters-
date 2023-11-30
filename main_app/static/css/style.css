@@ -156,7 +156,7 @@
   margin: 25%;
   margin-bottom: 20%;
   display: grid;
- justify-content:center;
+  justify-content: center;
 }
 
 #loginbtn {
@@ -172,7 +172,7 @@
 }
 
 .bodysignup {
-background-color:#f5f2e2;
+  background-color: #f5f2e2;
 }
 
 .signupbox {
@@ -187,6 +187,7 @@ background-color:#f5f2e2;
   margin-top: auto;
   margin-block: 5%;
   display: grid;
+ signupstyling
  color: gray;
  font-size: 10px;
  font-style: italic;
@@ -204,10 +205,15 @@ background-color:#f5f2e2;
   font-size: 15px;
   color: #023047;
 
+
+  justify-content: center;
+  color: #f5f2e2;
+ main
 }
 
 #signuptitle {
   font-size: 20px;
+  signupstyling
   color:#023047;
   text-align: center;
   margin-left: 1%;
@@ -266,3 +272,16 @@ background-color:#f5f2e2;
   display: grid;
   justify-content: center;
 }
+
+  color: #f5f2e2;
+  text-align: center;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+footer.page-footer {
+  background-color: #023047;
+  padding-top: 0;
+  text-align: right;
+}
+main
