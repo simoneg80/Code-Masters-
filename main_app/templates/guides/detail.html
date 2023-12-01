@@ -52,7 +52,12 @@
           <td>{{user.username}}</td>
           <td>{{comment.date}}</td>
           <td>{{comment.review}}</td>
-          <td><a href="{% url 'update_comment' guide_id=guide.id pk=comment.id %}">Edit</a></td>
+          <td>
+            <form method="POST" action="{% url 'update_comment' guide_id=guide.id pk=comment.id %}">
+                {% csrf_token %}
+                <button type="submit">Edit</button>
+            </form>
+        </td>
           <td><a href="{% url 'delete_comment' guide_id=guide.id pk=comment.id %}">Delete</a></td>
 
         </tr>
