@@ -56,7 +56,6 @@
   margin-top: 20%;
   font-style: italic;
   font-weight: 500;
-  
 }
 
 #homebutton {
@@ -190,7 +189,8 @@
   color: gray;
   font-size: 10px;
   font-style: italic;
-  padding-top: 5%; 
+  padding-top: 5%;
+  padding-top: 5%;
 }
 
 #signupbtn {
@@ -203,25 +203,19 @@
   border-radius: 4%;
   font-size: 15px;
   color: #023047;
-
-
-  justify-content: center;
-  color: #f5f2e2;
- main
 }
 
 #signuptitle {
   font-size: 20px;
-  signupstyling
-  color:#023047;
+  color: #023047;
   text-align: center;
   margin-left: 1%;
   margin-top: 10%;
   font-weight: 700;
 }
- .detailsbody {
+.detailsbody {
   background-color: #f5f2e2;
- }
+}
 
 #detailstitle {
   font-size: 80px;
@@ -233,11 +227,9 @@
   text-decoration: underline #ffb703;
   font-weight: 700;
   text-align: center;
-  
-
 }
 
-.detailcardtitle{
+.detailcardtitle {
   font-size: 30px;
   color: #023047;
   font-style: italic;
@@ -254,7 +246,7 @@
   font-weight: 500;
 }
 
-#detailbutton{
+#detailbutton {
   margin-top: 7%;
   background-color: #023047;
   height: 60px;
@@ -267,20 +259,7 @@
   max-width: 50%;
 }
 
-.orderform{
+.orderform {
   display: grid;
   justify-content: center;
 }
-
-  color: #f5f2e2;
-  text-align: center;
-  margin-left: 1%;
-  margin-bottom: 1%;
-}
-
-footer.page-footer {
-  background-color: #023047;
-  padding-top: 0;
-  text-align: right;
-}
-main
