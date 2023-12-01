@@ -1,6 +1,4 @@
 # Code Masters 
-
-# Simone Green BeautyBook Discussions 
 SEI-Project 3 Django Web Application
 
 ## Web Application Description 
