@@ -30,11 +30,8 @@ urlpatterns = [
     
 
 
-
-
-    # #signup path
+    #signup path
     path('accounts/signup/', views.signup, name='signup'),
 
-    
 
 ]
