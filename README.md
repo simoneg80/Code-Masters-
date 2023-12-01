@@ -17,7 +17,7 @@ Shop CodeMasters. Our e-commerce site created to offer a handy resource as you d
 
 <img width="1432" alt="login view:shop-pg" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/2fb608c0-d211-42d0-8b1a-f50171c105a0">
 
-<img width="661" alt="New update comment" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/52f25027-18aa-4229-927a-84ab7effb254">
+<img width="1439" alt="comments" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/e1403ea4-b00d-4701-ae4d-5bc3fee98b5a">
 
 ### Technologies Used
   * HTML
