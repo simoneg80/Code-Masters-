@@ -94,4 +94,5 @@ def delete_comment(request, guide_id, pk):
     comment.delete()
     return redirect('detail', guide_id=guide_id)
 
+
    
