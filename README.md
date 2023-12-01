@@ -17,8 +17,9 @@ Shop CodeMasters. Our e-commerce site created to offer a handy resource as you d
 
 <img width="1432" alt="login view:shop-pg" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/2fb608c0-d211-42d0-8b1a-f50171c105a0">
 
-<img width="1439" alt="comments" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/108cb659-4068-4e27-b64e-880882b64c6f">
-## Technologies Used
+<img width="661" alt="New update comment" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/52f25027-18aa-4229-927a-84ab7effb254">
+
+### Technologies Used
 * HTML
 * CSS
 * Python
@@ -32,7 +33,7 @@ Shop CodeMasters. Our e-commerce site created to offer a handy resource as you d
 <img width="610" alt="update:edit comment" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/30c8c167-9c7e-49df-8a48-8143dcbc4c5a">
 
 ## Web App Link
-
+https://codemasters1-847c25e34737.herokuapp.com/
 
 ## Next Steps
 * Create functionality to view all orders a user has placed
