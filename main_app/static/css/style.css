@@ -226,7 +226,7 @@
   margin: 6%;
   text-decoration: underline #ffb703;
   font-weight: 700;
-  text-align: center;
+  text-align: relative;
 }
 
 .detailcardtitle {
@@ -262,4 +262,8 @@
 .orderform {
   display: grid;
   justify-content: center;
+  margin-top: 10%;
+  margin-right: 55vw;
+  ;
 }
+

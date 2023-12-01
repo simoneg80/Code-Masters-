@@ -19,7 +19,7 @@
   <div class="col s6">
     <form class="orderform" method="POST" action="{% url 'orders_create' %}">
       {% csrf_token %} {{ order_form.as_p }}
-      <button type="submit">Save Order</button>
+      <button type="submit">Submit Order</button>
     </form>
   </div>
  
