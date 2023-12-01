@@ -1,5 +1,6 @@
 from django.urls import path
-from . import views 
+from . import views
+from .views import update_comment 
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -25,8 +26,8 @@ urlpatterns = [
     #comment add path
     path('guides/<int:guide_id>/add_comment', views.add_comment, name='add_comment'),
     path('comments/<int:guide_id>/<int:pk>/delete/', views.delete_comment, name='delete_comment'),
-    path('comments/<int:guide_id>/<int:pk>/update/', views.update_comment, name='update_comment'),
-    path('comments/<int:guide_id>/<int:pk>/edit/', views.edit_comment, name='edit_comment'),
+    path('guides/<int:guide_id>/update_comment/<int:comment_id>/', update_comment, name='update_comment'),
+    
 
 
     #signup path
