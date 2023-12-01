@@ -20,8 +20,6 @@ SEI-Project 3 Django Web Application
 
 <img width="1432" alt="login view:shop-pg" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/2fb608c0-d211-42d0-8b1a-f50171c105a0">
 
-<img width="589" alt="submit order" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/ce62bb2f-5c0c-4bea-a8a3-a15899140036">
-
 <img width="1439" alt="comments" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/108cb659-4068-4e27-b64e-880882b64c6f">
 ## Technologies Used
 * HTML
