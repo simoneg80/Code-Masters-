@@ -29,7 +29,7 @@
       {% csrf_token %} {{ comment_form.as_p }}
       <input type="submit" class="btn" value="Add Comment" />
     </form>
-    <table class="striped">
+    <table class="striped" id="commenttable">
       <thead>
         <tr>
           <th>UserName</th>

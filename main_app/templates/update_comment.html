@@ -1,11 +1,18 @@
-<h2>Update Comment</h2>
+{% extends 'base.html' %}
+{% block content %}
 
-<form
+<body class="bodyupdate">
+<h2 id="updatetitle">Update Comment</h2>
+
+<form class="updateform"
   method="post"
   action="{% url 'update_comment' guide_id=guide.id comment_id=comment.id %}"
 >
   {% csrf_token %}
   <label for="review">Comment</label>
   <input type="text" id="review" name="review" value="{{ comment.review }}" />
-  <button type="submit">Update Comment</button>
+  <button id="updatebutton" type="submit">Update</button>
 </form>
+</body>
+
+{% endblock %}

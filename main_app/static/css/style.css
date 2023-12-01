@@ -38,6 +38,7 @@
 .cardscontainer {
   display: grid;
   grid-template-columns: 33% 33% 33%;
+  margin-top: 10%;
 }
 
 .homecontent {
@@ -125,7 +126,7 @@
   color: #023047;
   font-style: italic;
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 10vw;
   text-decoration: underline #ffb703;
   font-weight: 700;
   text-align: center;
@@ -267,3 +268,48 @@
   ;
 }
 
+.bodyupdate{
+  background-color: #f5f2e2;
+}
+
+#updatetitle {
+  font-size: 60px;
+  color: #023047;
+  font-weight: 700;
+  font-style: italic;
+  margin-left: 50%;
+  margin-top: 50%;
+  margin: 6%;
+  text-align: center;
+}
+
+.updateform{
+  display: grid;
+  justify-content: center;
+  margin-top: 10%;
+  margin-right: 55vw;
+  align-items: center;
+  ;
+}
+
+#updatebutton {
+  margin-top: 7%;
+  background-color: #023047;
+  height: 60px;
+  border: 4px solid;
+  border-color: #ffb703;
+  border-radius: 4%;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffb703;
+  max-width: 65%;
+}
+
+#review{
+  width: 500%;
+}
+
+#commenttable{
+  margin-left: 50px;
+  margin-top: 10px;
+}
