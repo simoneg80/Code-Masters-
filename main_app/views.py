@@ -94,5 +94,14 @@ def delete_comment(request, guide_id, pk):
     comment.delete()
     return redirect('detail', guide_id=guide_id)
 
+def update_comment(request, guide_id, pk):
+    comment = Comment.objects.get(pk=pk)
+    comment_form = CommentForm(request.POST, instance=comment)
+    if comment_form.is_valid():
+        updated_comment = comment_form.save()
+        return redirect('detail', guide_id=guide_id)
+    else:
+        return redirect('detail', guide_id=guide_id)
+
 
    
