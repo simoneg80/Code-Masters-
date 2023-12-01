@@ -39,4 +39,5 @@ class Comment(models.Model):
   guide = models.ForeignKey(Guide, on_delete=models.CASCADE,blank=True, null=True)
 
   def __str__(self):
-    return f"{self.user.username} - {self.date} - {self.review}"
+    username = self.user.username if self.user else "Unknown User"
+    return f"{username} - {self.date} - {self.review}"

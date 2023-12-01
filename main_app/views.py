@@ -7,6 +7,7 @@ from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse
 from django.http import HttpResponse
+from django.shortcuts import get_object_or_404
 
 
 
@@ -94,21 +95,19 @@ def delete_comment(request, guide_id, pk):
     comment.delete()
     return redirect('detail', guide_id=guide_id)
 
-def update_comment(request, guide_id, pk):
-    comment = Comment.objects.get(pk=pk)
-    if request.method == 'POST':
-        comment_form = CommentForm(request.POST, instance=comment)
-        if comment_form.is_valid():
-            updated_comment = comment_form.save()
-            return redirect('detail', guide_id=guide_id)
-    else:
-        comment_form = CommentForm(instance=comment)
-    
-    return render(request, 'edit_comment.html', {'comment_form': comment_form})
+def update_comment(request, guide_id, comment_id):
+    guide = get_object_or_404(Guide, id=guide_id)
+    comment = get_object_or_404(Comment, id=comment_id)
 
-def edit_comment(request, guide_id, pk):
-    comment = Comment.objects.get(pk=pk)
-    return render(request, 'guides/detail.html', {'comment': comment})
+    if request.method == 'POST':
+        comment.review = request.POST['review']
+        comment.save()
+        return redirect('detail', guide_id=guide_id)
+        
+
+    return render(request, 'update_comment.html', {'guide': guide, 'comment': comment})
+
+
 
 
 
