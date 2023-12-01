@@ -20,17 +20,17 @@ Shop CodeMasters. Our e-commerce site created to offer a handy resource as you d
 <img width="661" alt="New update comment" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/52f25027-18aa-4229-927a-84ab7effb254">
 
 ### Technologies Used
-* HTML
-* CSS
-* Python
-* Djando
-* PostgreSQL
-* Django Authentication
+  * HTML
+  * CSS
+  * Python
+  * Djando
+  * PostgreSQL
+  * Django Authentication
 
 ## Challenging Code
 <img width="421" alt="add:delete comment" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/b268537d-410c-4570-be65-a7abfabff43b">
 
-<img width="610" alt="update:edit comment" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/30c8c167-9c7e-49df-8a48-8143dcbc4c5a">
+<img width="661" alt="New update comment" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/d408b4a9-d851-41af-9023-acf85268ef42">
 
 ## Web App Link
 https://codemasters1-847c25e34737.herokuapp.com/
