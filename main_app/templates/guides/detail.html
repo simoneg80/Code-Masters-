@@ -52,6 +52,7 @@
           <td>{{user.username}}</td>
           <td>{{comment.date}}</td>
           <td>{{comment.review}}</td>
+          <td><a href="{% url 'delete_comment' comment.id %}">Delete</a></td>
         </tr>
         {% endfor %}
       </tbody>
