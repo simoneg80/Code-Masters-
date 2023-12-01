@@ -8,12 +8,21 @@ SEI-Project 3 Django Web Application
 
 ## Application Images
 ### Planning
+<img width="1187" alt="erd" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/1d181fde-3347-4aec-89ae-4296b87ba121">
+
+<img width="1141" alt="trello" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/1653b9be-875b-4f25-a374-0dd282377ece">
 
 ### Homepage
-
+<img width="1439" alt="Homepage" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/cd7a4903-090d-41b3-99ef-279edb73e28f">
 
 ### Accessibility after login
+<img width="1125" alt="Auth" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/8b1041f6-a444-494c-a3de-e43ee06d1f6e">
 
+<img width="1432" alt="login view:shop-pg" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/2fb608c0-d211-42d0-8b1a-f50171c105a0">
+
+<img width="589" alt="submit order" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/ce62bb2f-5c0c-4bea-a8a3-a15899140036">
+
+<img width="1439" alt="comments" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/108cb659-4068-4e27-b64e-880882b64c6f">
 ## Technologies Used
 * HTML
 * CSS
@@ -23,7 +32,9 @@ SEI-Project 3 Django Web Application
 * Django Authentication
 
 ## Challenging Code
+<img width="421" alt="add:delete comment" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/b268537d-410c-4570-be65-a7abfabff43b">
 
+<img width="610" alt="update:edit comment" src="https://github.com/simoneg80/Code-Masters-/assets/145403760/30c8c167-9c7e-49df-8a48-8143dcbc4c5a">
 
 ## Web App Link
 
